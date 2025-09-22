@@ -1,11 +1,52 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-  "extensions": [
-    "github.vscode-codeql",
-    "slevesque.vscode-zipexplorer"
-  ],
-  "postCreateCommand": "git submodule init && git submodule update --recursive",
-  "settings": {
-    "codeQL.runningQueries.memory": 2048
+  "name": "codeql-codespace-prebuild",
+  "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-22.04",
+  "remoteUser": "vscode",
+  "customizations": {
+    "codespaces": {
+      "extensions": [
+        "github.vscode-codeql"
+      ],
+      "settings": {
+        "codeQL.runningQueries.memory": 4096,
+        "codeQL.runningQueries.autoSave": true,
+        // Reduce startup work by disabling extension auto-updates and telemetry checks
+        "extensions.autoUpdate": false,
+        "extensions.autoCheckUpdates": false,
+        "telemetry.telemetryLevel": "off",
+        "telemetry.enableTelemetry": false
+      },
+      "openFiles": [
+        "vscode-codeql-starter.code-workspace",
+        "README.md"
+      ]
+      // intentionally not opening additional files on start to reduce work for prebuilt codespaces
+    },
+    "vscode": {
+      "extensions": [
+        "github.vscode-codeql"
+      ],
+      "settings": {
+        "codeQL.runningQueries.memory": 4096,
+        "extensions.autoUpdate": false,
+        "extensions.autoCheckUpdates": false,
+        "telemetry.telemetryLevel": "off",
+        "telemetry.enableTelemetry": false
+      },
+      "openFiles": [
+        "vscode-codeql-starter.code-workspace",
+        "README.md"
+      ]
+      // intentionally not opening additional files on start to reduce work for local dev-container startups
+    }
+  },
+  // Run submodule initialization only once during container creation; use shallow fetch to speed up
+  "onCreateCommand": "git submodule init && git submodule update --recursive --depth 1",
+  // During workspace updates in a prebuild, this command runs to ensure submodules are in sync without heavy work
+  "updateContentCommand": "git submodule update --recursive --depth 1",
+  // Keep post-start tasks minimal so each new Codespace starts fast
+  "postStartCommand": "echo 'Codespace started'",
+  "hostRequirements": {
+    "memory": "16gb"
   }
  }
