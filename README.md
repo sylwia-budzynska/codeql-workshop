@@ -1,5 +1,5 @@
 <h1 align="center">Finding vulnerabilities with CodeQL</h1>
-<h3 align="center">Secure Open Source Fund 2025</h3>
+<h3 align="center">Original workshop by [Sylwia Budzynska](https://github.com/sylwia-budzynska)</h3>
 
 <p align="center">
   <a href="#mega-prerequisites">Prerequisites</a> •
