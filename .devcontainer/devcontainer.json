@@ -41,7 +41,7 @@
     }
   },
   // Run submodule initialization only once during container creation; use shallow fetch to speed up
-  "onCreateCommand": "git submodule init && git submodule update --recursive --depth 1 && curl -o https://github.com/sylwia-budzynska/codeql-workshop/releases/download/v1/kohya_ss-db.zip",
+  "onCreateCommand": "git submodule init && git submodule update --recursive --depth 1",
   // During workspace updates in a prebuild, this command runs to ensure submodules are in sync without heavy work
   "updateContentCommand": "git submodule update --recursive --depth 1",
   // Keep post-start tasks minimal so each new Codespace starts fast
