@@ -6,6 +6,7 @@
       ],
       "settings": {
         "codeQL.cli.executablePath": "/workspaces/codeql/codeql",
+        "codeQL.githubDatabase.download": "never",
         "codeQL.runningQueries.memory": 4096,
         "codeQL.runningQueries.autoSave": true,
         // Reduce startup work by disabling extension auto-updates and telemetry checks
@@ -25,6 +26,7 @@
       ],
       "settings": {
         "codeQL.cli.executablePath": "/workspaces/codeql/codeql",
+        "codeQL.githubDatabase.download": "never",
         "codeQL.runningQueries.memory": 4096,
         "extensions.autoUpdate": false,
         "extensions.autoCheckUpdates": false,
