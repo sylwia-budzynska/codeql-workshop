@@ -8,7 +8,7 @@ ZIP=$(mktemp codeql.XXXX.zip)
 echo Installing CodeQL version $LATEST_VERSION
 curl -fSqL -o $ZIP $URL/download/$LATEST_VERSION/codeql-linux64.zip
 unzip -q $ZIP -d /workspaces/ && rm $ZIP
-mkdir -p /home/vscode/.local/bin/
+# mkdir -p /home/vscode/.local/bin/
 # Set up a symlink to make CodeQL available in PATH
 # ln -s /workspaces/codeql/codeql /home/vscode/.local/bin/codeql
 
