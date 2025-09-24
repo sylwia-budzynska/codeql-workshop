@@ -1,7 +1,4 @@
 {
-  "name": "codeql-codespace-prebuild",
-  "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-22.04",
-  "remoteUser": "vscode",
   "customizations": {
     "codespaces": {
       "extensions": [
@@ -41,10 +38,7 @@
   // Run submodule initialization only once during container creation; use shallow fetch to speed up
   "onCreateCommand": "bash .devcontainer/startup.sh",
   // During workspace updates in a prebuild, this command runs to ensure submodules are in sync without heavy work
-  "updateContentCommand": "git submodule update --recursive --depth 1",
+  "updateContentCommand": "git submodule update --recursive --depth 1"
   // Keep post-start tasks minimal so each new Codespace starts fast
-  // "postStartCommand": "ln -s /workspaces/codeql/codeql /home/vscode/.local/bin/codeql && echo 'Codespace started'",
-  "hostRequirements": {
-    "memory": "16gb"
-  }
+  // "postStartCommand": "ln -s /workspaces/codeql/codeql /home/vscode/.local/bin/codeql && echo 'Codespace started'"
  }
