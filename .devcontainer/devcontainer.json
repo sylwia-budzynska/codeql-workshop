@@ -2,7 +2,8 @@
   "customizations": {
     "codespaces": {
       "extensions": [
-        "github.vscode-codeql"
+        "github.vscode-codeql",
+        "-GitHub.vscode-pull-request-github"
       ],
       "settings": {
         "codeQL.cli.executablePath": "/workspaces/codeql/codeql",
@@ -22,7 +23,8 @@
     },
     "vscode": {
       "extensions": [
-        "github.vscode-codeql"
+        "github.vscode-codeql",
+        "-GitHub.vscode-pull-request-github"
       ],
       "settings": {
         "codeQL.cli.executablePath": "/workspaces/codeql/codeql",
