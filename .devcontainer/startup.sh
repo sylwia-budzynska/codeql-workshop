@@ -14,5 +14,5 @@ unzip -q $ZIP -d /workspaces/ && rm $ZIP
 
 echo Installed CodeQL version $LATEST_VERSION
 
-# # Download submodules (if any)
-# git submodule init && git submodule update --recursive --depth 1
+# # Download submodules 
+git submodule init && git submodule update --recursive --depth 1
