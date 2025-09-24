@@ -16,3 +16,6 @@ echo Installed CodeQL version $LATEST_VERSION
 
 # # Download submodules 
 git submodule init && git submodule update --recursive --depth 1
+
+curl -O "https://github.com/sylwia-budzynska/codeql-workshop/releases/download/v1/test-app-db.zip"
+curl -O "https://github.com/sylwia-budzynska/codeql-workshop/releases/download/v1/kohya_ss-db.zip"
