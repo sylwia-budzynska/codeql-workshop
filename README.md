@@ -32,7 +32,7 @@ Note: The first 120 hours per core of Codespace usage are free per month, we use
 #### Instructions
 
 1. Login to your [GitHub](https://github.com/login) account
-2. Go to the repo https://github.com/sylwia-budzynska/2025-soss-codeql-workshop / (short link: https://gh.io/soss-codeql)
+2. Go to the repo https://github.com/sylwia-budzynska/codeql-workshop 
 3. Click on Code -> Codespaces
 4. Click on the plus sign (+) to create a new codespace.
 
@@ -63,10 +63,14 @@ Use a local CodeQL installation to work on the workshop exercises.
 1. Install [VS Code extension for CodeQL](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-codeql)
 2. Run in the terminal:
 ```bash
-git clone https://github.com/sylwia-budzynska/2025-soss-codeql-workshop
-cd 2025-soss-codeql-workshop
+git clone https://github.com/sylwia-budzynska/codeql-workshop
+cd codeql-workshop
 git submodule init
 git submodule update --recursive
+
+# Download CodeQL databases
+curl -L -O "https://github.com/sylwia-budzynska/codeql-workshop/releases/download/v1/test-app-db.zip"
+curl -L -O "https://github.com/sylwia-budzynska/codeql-workshop/releases/download/v1/kohya_ss-db.zip"
 ```
 3. In VS Code: File -> **Open Workspace from File...** `vscode-codeql-starter.code-workspace`
 4. Continue with [Selecting a CodeQL Database](#select-codeql-database)
@@ -114,7 +118,7 @@ When the database is selected it should look like this (note the checkmark):
 - [CodeQL library for Python](https://codeql.github.com/codeql-standard-libraries/python/)
 - [Basic query for Python code](https://codeql.github.com/docs/codeql-language-guides/basic-query-for-python-code/)
 - [QL classes](https://codeql.github.com/docs/ql-language-reference/types/#classes)
--  [CodeQL zero to hero part 1: the fundamentals of static analysis for vulnerability research](https://github.blog/2023-03-31-codeql-zero-to-hero-part-1-the-fundamentals-of-static-analysis-for-vulnerability-research/)
+- [CodeQL zero to hero part 1: the fundamentals of static analysis for vulnerability research](https://github.blog/2023-03-31-codeql-zero-to-hero-part-1-the-fundamentals-of-static-analysis-for-vulnerability-research/)
 - [CodeQL zero to hero part 2: getting started with CodeQL](https://github.blog/2023-06-15-codeql-zero-to-hero-part-2-getting-started-with-codeql/)
 - [CodeQL zero to hero part 3: security research](https://github.blog/2024-04-29-codeql-zero-to-hero-part-3-security-research-with-codeql/)
 - [CodeQL zero to hero part 4: Gradio case study](https://github.blog/security/vulnerability-research/codeql-zero-to-hero-part-4-gradio-framework-case-study/). Link to the [challenges accompanying the blog post](https://github.com/GitHubSecurityLab/codeql-zero-to-hero/tree/main/4)
