@@ -3,7 +3,11 @@
     "codespaces": {
       "extensions": [
         "github.vscode-codeql"
-      ],
+      ],  
+    "features": {
+      "ghcr.io/devcontainers/features/git-lfs": {
+        "autoPull": false
+      },
       "settings": {
         "codeQL.cli.executablePath": "/workspaces/codeql/codeql",
         "codeQL.githubDatabase.download": "never",
