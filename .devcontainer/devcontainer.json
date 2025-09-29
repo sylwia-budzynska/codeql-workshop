@@ -39,6 +39,11 @@
       ]
     }
   },
+    "features": {
+    "ghcr.io/devcontainers/features/git-lfs": {
+      "autoPull": false
+    }
+  },
   // Run submodule initialization only once during container creation; use shallow fetch to speed up
   "onCreateCommand": "bash .devcontainer/startup.sh",
   // During workspace updates in a prebuild, this command runs to ensure submodules are in sync without heavy work
