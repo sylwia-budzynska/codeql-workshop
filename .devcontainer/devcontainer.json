@@ -49,7 +49,7 @@
   // During workspace updates in a prebuild, this command runs to ensure submodules are in sync without heavy work
   "updateContentCommand": "git submodule update --recursive --depth 1",
   // Keep post-start tasks minimal so each new Codespace starts fast
-  // "postCreateCommand": "echo 'export PATH=\"$PATH:/workspaces/codeql\"' >> ~/.bashrc",
+  "postCreateCommand": "echo 'export PATH=\"$PATH:/workspaces/codeql\"' >> ~/.bashrc",
   "hostRequirements": {
     "memory": "16gb"
   }
