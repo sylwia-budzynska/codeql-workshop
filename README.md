@@ -15,10 +15,36 @@
 ## :mega: Prerequisites
 
 You can choose between two options to run the workshop exercises:
-* [Option A: GitHub Codespace](#option-a-github-codespace) (Using a Browser or VS Code - CodeQL is run remotely on a Linux based GitHub Codespace in the cloud)
-* [Option B: Local installation](#option-b-local-installation) (Using VS Code - CodeQL is run locally on your machine)
+* [Option A: Local installation](#option-b-local-installation) (Using VS Code - CodeQL is run locally on your machine)
+* [Option B: GitHub Codespace](#option-a-github-codespace) (Using a Browser or VS Code - CodeQL is run remotely on a Linux based GitHub Codespace in the cloud)
 
-### Option A: GitHub Codespace
+### Option A: Local installation
+
+Use a local CodeQL installation to work on the workshop exercises.
+
+#### Prerequisites
+
+* [Visual Studio Code](https://code.visualstudio.com/download) (VS Code) and `git` installed on your local machine.
+
+#### Instructions
+
+1. Install [VS Code extension for CodeQL](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-codeql)
+2. Run in the terminal:
+```bash
+git clone https://github.com/sylwia-budzynska/codeql-workshop
+cd codeql-workshop
+git submodule init
+git submodule update --recursive
+
+# Download CodeQL databases
+curl -L -O "https://github.com/sylwia-budzynska/codeql-workshop/releases/download/v1/test-app-db.zip"
+curl -L -O "https://github.com/sylwia-budzynska/codeql-workshop/releases/download/v1/kohya_ss-db.zip"
+```
+3. In VS Code: File -> **Open Workspace from File...** `vscode-codeql-starter.code-workspace`
+4. Continue with [Selecting a CodeQL Database](#select-codeql-database)
+5. Then [Test your installation](#test-your-installation)
+
+### Option B: GitHub Codespace
 
 Use a remote GitHub Codespace to work on the workshop exercises.
 
@@ -48,35 +74,9 @@ If you are asked to open the workspace `vscode-codeql-starter.code-workspace` cl
 6. Continue with [Selecting a CodeQL Database](#select-codeql-database)
 7. Then [Test your installation](#test-your-installation)
 
-You can see your codespaces on at [github.com/codespaces](https://github.com/codespaces).
+You can see your codespaces on at [github.com/codespaces](https://github.com/codespaces). The codespace will turn off on its a few hours after not using it, but to ensure you are not using additional hours of the 120h free ones, remember to go to [github.com/codespaces](https://github.com/codespaces) > three dots > "Stop codespace" after the workshop.
 
-### Option B: Local installation
-
-Use a local CodeQL installation to work on the workshop exercises.
-
-#### Prerequisites
-
-* [Visual Studio Code](https://code.visualstudio.com/download) (VS Code) and `git` installed on your local machine.
-
-#### Instructions
-
-1. Install [VS Code extension for CodeQL](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-codeql)
-2. Run in the terminal:
-```bash
-git clone https://github.com/sylwia-budzynska/codeql-workshop
-cd codeql-workshop
-git submodule init
-git submodule update --recursive
-
-# Download CodeQL databases
-curl -L -O "https://github.com/sylwia-budzynska/codeql-workshop/releases/download/v1/test-app-db.zip"
-curl -L -O "https://github.com/sylwia-budzynska/codeql-workshop/releases/download/v1/kohya_ss-db.zip"
-```
-3. In VS Code: File -> **Open Workspace from File...** `vscode-codeql-starter.code-workspace`
-4. Continue with [Selecting a CodeQL Database](#select-codeql-database)
-5. Then [Test your installation](#test-your-installation)
-
-#### Troubleshooting the local installation
+#### Troubleshooting the installation
 
 In case you see errors such as:
 * `Failed to run query: Could not resolve library path for [..]`
@@ -122,6 +122,7 @@ When the database is selected it should look like this (note the checkmark):
 - [CodeQL zero to hero part 2: getting started with CodeQL](https://github.blog/2023-06-15-codeql-zero-to-hero-part-2-getting-started-with-codeql/)
 - [CodeQL zero to hero part 3: security research](https://github.blog/2024-04-29-codeql-zero-to-hero-part-3-security-research-with-codeql/)
 - [CodeQL zero to hero part 4: Gradio case study](https://github.blog/security/vulnerability-research/codeql-zero-to-hero-part-4-gradio-framework-case-study/). Link to the [challenges accompanying the blog post](https://github.com/GitHubSecurityLab/codeql-zero-to-hero/tree/main/4)
+- [CodeQL zero to hero part 5: debugging queries](https://github.blog/security/vulnerability-research/codeql-zero-to-hero-part-5-debugging-queries/)
 
 ## Workshop
 
