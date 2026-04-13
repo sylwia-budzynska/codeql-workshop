@@ -26,6 +26,8 @@
 		}
 	],
 	"settings": {
-		"omnisharp.autoStart": false
+		"omnisharp.autoStart": false,
+		"git.detectSubmodules": false,
+		"git.detectSubmodulesLimit": 0
 	}
 }

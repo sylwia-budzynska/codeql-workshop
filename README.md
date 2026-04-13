@@ -34,7 +34,7 @@ Use a local CodeQL installation to work on the workshop exercises.
 git clone https://github.com/sylwia-budzynska/codeql-workshop
 cd codeql-workshop
 git submodule init
-git submodule update --recursive
+git submodule update --recursive  --depth 1
 
 # Download CodeQL databases
 curl -L -O "https://github.com/sylwia-budzynska/codeql-workshop/releases/download/v1/test-app-db.zip"
@@ -58,7 +58,7 @@ Note: The first 120 hours per core of Codespace usage are free per month, we use
 #### Instructions
 
 1. Login to your [GitHub](https://github.com/login) account
-2. Go to the repo https://github.com/sylwia-budzynska/codeql-workshop 
+2. Go to the repo https://github.com/sylwia-budzynska/codeql-workshop
 3. Click on Code -> Codespaces
 4. Click on the plus sign (+) to create a new codespace.
 
