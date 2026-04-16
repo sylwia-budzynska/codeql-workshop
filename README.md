@@ -15,8 +15,8 @@
 ## :mega: Prerequisites
 
 You can choose between two options to run the workshop exercises:
-* [Option A: Local installation](#option-b-local-installation) (Using VS Code - CodeQL is run locally on your machine)
-* [Option B: GitHub Codespace](#option-a-github-codespace) (Using a Browser or VS Code - CodeQL is run remotely on a Linux based GitHub Codespace in the cloud)
+* [Option A: Local installation](#option-a-local-installation) (Using VS Code - CodeQL is run locally on your machine)
+* [Option B: GitHub Codespace](#option-b-github-codespace) (Using a Browser or VS Code - CodeQL is run remotely on a Linux based GitHub Codespace in the cloud)
 
 ### Option A: Local installation
 
@@ -88,7 +88,7 @@ It is very likely that you missed cloning the git submodules (namely the ql repo
 ### Select CodeQL Database
 
 1. Make sure you have the workspace `vscode-codeql-starter.code-workspace` open in VS Code.
-2. Go To the CodeQL View
+2. Click the "QL" icon on the left tab pane to go to the CodeQL view.
 3. Click on "Choose Database from Archive" and select the `test-app-db.zip` file in the root of the repository.
 
 ### Test your installation
