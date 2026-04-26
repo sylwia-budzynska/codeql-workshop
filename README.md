@@ -605,4 +605,5 @@ Check out these resources if you'd like to know more about:
   - [CodeQL zero to hero part 3: security research](https://github.blog/2024-04-29-codeql-zero-to-hero-part-3-security-research-with-codeql/). 
   - [CodeQL zero to hero part 4: Gradio case study](https://github.blog/security/vulnerability-research/codeql-zero-to-hero-part-4-gradio-framework-case-study/). 
   - [CodeQL zero to hero part 5: debugging queries](https://github.blog/security/vulnerability-research/codeql-zero-to-hero-part-5-debugging-queries/)
+
 If you end up finding a vulnerability using CodeQL, feel free to add it to the [CodeQL Wall of Fame](https://gh.io/codeql-wall-of-fame/).
