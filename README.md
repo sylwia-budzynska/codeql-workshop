@@ -602,8 +602,10 @@ Check out these resources if you'd like to know more about:
 - fundamentals of using CodeQL and its query language:
   - [CodeQL zero to hero part 2: getting started with CodeQL](https://github.blog/2023-06-15-codeql-zero-to-hero-part-2-getting-started-with-codeql/). 
 - security research with CodeQL:
-  - [CodeQL zero to hero part 3: security research](https://github.blog/2024-04-29-codeql-zero-to-hero-part-3-security-research-with-codeql/). 
-  - [CodeQL zero to hero part 4: Gradio case study](https://github.blog/security/vulnerability-research/codeql-zero-to-hero-part-4-gradio-framework-case-study/). 
+  - [CodeQL zero to hero part 3: security research](https://github.blog/2024-04-29-codeql-zero-to-hero-part-3-security-research-with-codeql/).
+- How to model CodeQL for a web framework on example of Gradio
+  - [CodeQL zero to hero part 4: Gradio case study](https://github.blog/security/vulnerability-research/codeql-zero-to-hero-part-4-gradio-framework-case-study/).
+- Debugging why a query might not be working:
   - [CodeQL zero to hero part 5: debugging queries](https://github.blog/security/vulnerability-research/codeql-zero-to-hero-part-5-debugging-queries/)
 
 If you end up finding a vulnerability using CodeQL, feel free to add it to the [CodeQL Wall of Fame](https://gh.io/codeql-wall-of-fame/).
