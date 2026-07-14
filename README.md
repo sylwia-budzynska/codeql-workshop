@@ -74,7 +74,7 @@ If you are asked to open the workspace `vscode-codeql-starter.code-workspace` cl
 6. Continue with [Selecting a CodeQL Database](#select-codeql-database)
 7. Then [Test your installation](#test-your-installation)
 
-You can see your codespaces on at [github.com/codespaces](https://github.com/codespaces). The codespace will turn off on its a few hours after not using it, but to ensure you are not using additional hours of the 120h free ones, remember to go to [github.com/codespaces](https://github.com/codespaces) > three dots > "Stop codespace" after the workshop.
+You can see your codespaces on at [github.com/codespaces](https://github.com/codespaces). The codespace will turn off on its own after a few hours of not using it, but to ensure you are not using additional hours of the 120h free ones, remember to go to [github.com/codespaces](https://github.com/codespaces) > three dots > "Stop codespace" after the workshop.
 
 #### Troubleshooting the installation
 
@@ -90,6 +90,9 @@ It is very likely that you missed cloning the git submodules (namely the ql repo
 1. Make sure you have the workspace `vscode-codeql-starter.code-workspace` open in VS Code.
 2. Click the "QL" icon on the left tab pane to go to the CodeQL view.
 3. Click on "Choose Database from Archive" and select the `test-app-db.zip` file in the root of the repository.
+   Note: At this point you may encounter an error in VSCode with a pop-up message asking to install the CodeQL CLI.  Accepting this install should fix the issue.  After the CLI install finishes, you should be able to then complete the above database selection.
+   <img src="images/error-VSCode-pop-codeQL.png"  alt="Screenshot: VSCode error msg re. CodeQL">
+   <img src="images/installing-VSCode-pop-codeQL-CLI.png"  alt="Screenshot: VSCode installing CodeQL CLI">
 
 ### Test your installation
 
