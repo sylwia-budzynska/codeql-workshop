@@ -1,8 +1,7 @@
 ## Contributing
 
-[fork]: https://github.com/github/vscode-codeql-starter/fork
-[pr]: https://github.com/github/vscode-codeql-starter/compare
-[style]: https://primer.style
+[fork]: https://github.com/sylwia-budzynska/codeql-workshop/fork
+[pr]: https://github.com/sylwia-budzynska/codeql-workshop/compare
 [code-of-conduct]: CODE_OF_CONDUCT.md
 
 Hi there! We're thrilled that you'd like to contribute to this project. Your help is essential for keeping it great.
@@ -20,7 +19,6 @@ Please note that this project is released with a [Contributor Code of Conduct][c
 
 Here are a few things you can do that will increase the likelihood of your pull request being accepted:
 
-- Follow the [style guide][style].
 - Keep your change as focused as possible. If there are multiple changes you would like to make that are not dependent upon each other, consider submitting them as separate pull requests.
 - Write a [good commit message](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html).
 
